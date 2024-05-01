@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Delete Modal</title>
+  </head>
+  <body>
+    <main class="h-screen bg-white flex justify-center items-center">
+      <!-- Title and sub -->
+      <div class="px-6 py-4 flex space-x-4 items-start rounded-lg shadow-lg">
+        <span class="text-3xl">⚠</span>
+        <div>
+          <div>
+            <h2 class="text-lg font-semibold text-center md:text-left">
+              Are you Sure?
+            </h2>
+          </div>
+          <p class="text-gray-500">You are about to delete your post</p>
+          <!-- action buttons -->
+          <div
+            class="flex flex-col md:flex-row md:justify-end space-y-3 md:space-y-0 md:space-x-4 py-3"
+          >
+            <button
+              class="px-4 py-2 border bg-yellow-400 border border-yellow-400 rounded-md hover:bg-yellow-300 transition duration-150"
+            >
+              Delete
+            </button>
+            <button
+              class="px-4 py-2 border bg-gray-100 border rounded-md hover:bg-gray-300 transition duration-150"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
