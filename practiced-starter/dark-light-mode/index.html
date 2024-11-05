@@ -10,6 +10,13 @@
       };
     </script>
     <style>
+      /** BUTTON CHECKED
+        * shift to right
+        * change the border color to #68d391
+        WHEN BUTTON CHECKED
+          TOGGLE-LABEL
+          * background: #68d391 
+      **/
       .toggle-checkbox:checked {
         right: 0;
         border-color: #68d391;
@@ -51,6 +58,11 @@
       </div>
     </div>
     <script>
+      /** get the toogle input button
+        * if the button is checked: add "dark" class to html tag
+        * if not, remove 'dark' class from html tag
+
+      **/
       document.getElementById("toggle").addEventListener("change", function () {
         if (this.checked) {
           document.documentElement.classList.add("dark");
